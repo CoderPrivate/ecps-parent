@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.springframework.scheduling:quartz:unknown">
+    <CLASSES>
+      <root url="jar://H:/maven/shoprepository/org/springframework/scheduling/quartz/unknown/quartz-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://H:/maven/shoprepository/org/springframework/scheduling/quartz/unknown/quartz-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://H:/maven/shoprepository/org/springframework/scheduling/quartz/unknown/quartz-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
