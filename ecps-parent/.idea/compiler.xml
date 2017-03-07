@@ -6,11 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ecps-parent" />
+        <module name="ecps-console" />
+        <module name="ecps-core" />
+        <module name="ecps-file" />
+        <module name="ecps-portal" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ecps-console" target="1.5" />
+      <module name="ecps-core" target="1.5" />
+      <module name="ecps-file" target="1.5" />
       <module name="ecps-parent" target="1.5" />
+      <module name="ecps-portal" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
