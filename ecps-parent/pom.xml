@@ -35,8 +35,8 @@
         <webtest.version>3.0</webtest.version>
         <axis2.version>1.5.4</axis2.version>
         <jdbc.groupId>com.oracle</jdbc.groupId>
-        <jdbc.artifactId>ojdbc14</jdbc.artifactId>
-        <jdbc.version>10.2.0.2.0</jdbc.version>
+        <jdbc.artifactId>ojdbc6</jdbc.artifactId>
+        <jdbc.version>11.2.0.3</jdbc.version>
         <jdbc.driverClassName>oracle.jdbc.OracleDriver</jdbc.driverClassName>
         <jedis.version>2.6.2</jedis.version>
     </properties>

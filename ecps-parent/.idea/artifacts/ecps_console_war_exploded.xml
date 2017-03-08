@@ -10,7 +10,7 @@
           <element id="archive" name="ecps-core-1.0-SNAPSHOT.jar">
             <element id="module-output" name="ecps-core" />
           </element>
-          <element id="library" level="project" name="Maven: com.oracle:ojdbc14:10.2.0.2.0" />
+          <element id="library" level="project" name="Maven: com.oracle:ojdbc6:11.2.0.3" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.3" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.3.1" />
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.6" />
