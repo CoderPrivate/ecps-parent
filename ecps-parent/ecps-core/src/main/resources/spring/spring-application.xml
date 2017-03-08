@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+	    http://www.springframework.org/schema/context/spring-context.xsd
+	    http://www.springframework.org/schema/aop
+	    http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"></property>
+        <property name="url" value="jdbc:oracle:thin:10.20.16.52:1521:orcl"></property>
+        <property name="username" value="bon_new"></property>
+        <property name="password" value="bon_new1"></property>
+
+    </bean>
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+
+    </bean>
+
+    <!-- 事务配置 -->
+    <bean id="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager" >
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <!--mapper批量扫描，从mapper包中扫描出mapper接口，自动创建代理对象并在spring容器中注册、
+注意：mapper.java和mapper.xml名称必须一致且在一个目录中
+自动扫描出来的mapper的bean的id为mapper类名（首字母小写）
+-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!-- 指定扫描的包名，如果扫描多个包，包之间需用半角逗号隔开 -->
+        <property name="basePackage" value="com.chen.ecps.mapper"/>
+    </bean>
+
+    <aop:config>
+    <aop:pointcut expression="execution(* com.chen.ecps.service.impl.*Impl.*(..))" id="pointcut"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="pointcut"/>
+    </aop:config>
+<tx:advice id="txAdvice" transaction-manager="transactionManager">
+<tx:attributes>
+    <tx:method name="query*" propagation="REQUIRED" read-only="true"/>
+    <tx:method name="find*" propagation="REQUIRED" read-only="true"/>
+    <tx:method name="save*" propagation="REQUIRED"/>
+    <tx:method name="delete*" propagation="REQUIRED"/>
+    <tx:method name="add*" propagation="REQUIRED"/>
+    <tx:method name="modify*" propagation="REQUIRED"/>
+    <tx:method name="update*" propagation="REQUIRED"/>
+</tx:attributes>
+</tx:advice>
+
+<aop:aspectj-autoproxy proxy-target-class="true"/>
+<aop:aspectj-autoproxy/>
+</beans>
