@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: net.benas.cb4j:cb4j:unknown">
     <CLASSES>
-      <root url="jar://H:/maven/shoprepository/net/benas/cb4j/cb4j/unknown/cb4j-unknown.jar!/" />
+      <root url="jar://G:/workroom/m2/net/benas/cb4j/cb4j/unknown/cb4j-unknown.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://H:/maven/shoprepository/net/benas/cb4j/cb4j/unknown/cb4j-unknown-javadoc.jar!/" />
+      <root url="jar://G:/workroom/m2/net/benas/cb4j/cb4j/unknown/cb4j-unknown-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://H:/maven/shoprepository/net/benas/cb4j/cb4j/unknown/cb4j-unknown-sources.jar!/" />
+      <root url="jar://G:/workroom/m2/net/benas/cb4j/cb4j/unknown/cb4j-unknown-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

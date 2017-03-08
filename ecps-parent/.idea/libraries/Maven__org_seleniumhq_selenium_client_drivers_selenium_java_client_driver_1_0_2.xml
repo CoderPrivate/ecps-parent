@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.seleniumhq.selenium.client-drivers:selenium-java-client-driver:1.0.2">
     <CLASSES>
-      <root url="jar://H:/maven/shoprepository/org/seleniumhq/selenium/client-drivers/selenium-java-client-driver/1.0.2/selenium-java-client-driver-1.0.2.jar!/" />
+      <root url="jar://G:/workroom/m2/org/seleniumhq/selenium/client-drivers/selenium-java-client-driver/1.0.2/selenium-java-client-driver-1.0.2.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://H:/maven/shoprepository/org/seleniumhq/selenium/client-drivers/selenium-java-client-driver/1.0.2/selenium-java-client-driver-1.0.2-javadoc.jar!/" />
+      <root url="jar://G:/workroom/m2/org/seleniumhq/selenium/client-drivers/selenium-java-client-driver/1.0.2/selenium-java-client-driver-1.0.2-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://H:/maven/shoprepository/org/seleniumhq/selenium/client-drivers/selenium-java-client-driver/1.0.2/selenium-java-client-driver-1.0.2-sources.jar!/" />
+      <root url="jar://G:/workroom/m2/org/seleniumhq/selenium/client-drivers/selenium-java-client-driver/1.0.2/selenium-java-client-driver-1.0.2-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

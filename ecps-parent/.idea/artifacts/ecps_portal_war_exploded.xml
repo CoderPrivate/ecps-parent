@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="ecps-portal:war exploded">
-    <output-path>D:/apache-tomcat-6.0.37/webapps/ecps-portal</output-path>
+    <output-path>$PROJECT_DIR$/ecps-portal/target/ecps-portal-1.0-SNAPSHOT</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
