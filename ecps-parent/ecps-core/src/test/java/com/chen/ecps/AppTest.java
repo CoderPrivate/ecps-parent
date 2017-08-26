@@ -4,7 +4,7 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
-/**
+/**这是测试
  * Unit test for simple App.
  */
 public class AppTest 
